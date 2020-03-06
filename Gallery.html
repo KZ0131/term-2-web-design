@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <style>
+  body {
+			background-color: lavender;	
+			
+			background-image: url('apex background.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center
+		}
+  *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Oxanium' ;
+}
+nav{
+  background: #610e05;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: red;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #e8574d;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.content{
+text-align: center;
+color: #4d1915;
+
+}
+@media (min-width: 900px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 850px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #610e05;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: red;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+  text-transformation: uppercase;
+  font-family: 'Oxanium', sans-serif;
+  font-weight: bold;
+  margin-top: 45px;
+ color:white;
+  padding:20px;
+  display: block;
+  background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #00c6ff 50%,
+    #00c6ff);
+  background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url("https://www.gamersnexus.net/guides/3443-apex-legends-gpu-benchmark-1080p-1440p-4k") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+  </style>
+    <meta charset="utf-8">
+    <title>Apex Legends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+			
+		
+   <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Apex Legends</label>
+      <ul>
+        <li><a class="active" href="#">Gallery</a></li>
+			  <li><a href="Personal Connections.html">Personal Connections</a></li>
+			  <li><a href="Gameplay.html">Gameplay</a></li>
+			  <li><a href="Overview.html">Overview</a></li>
+      </ul>
+    </nav>
+    <section> 
+	<div class="content" >
+
+	 <h2> 
+         </div>
+	</section>
+  </body>
+</html>
